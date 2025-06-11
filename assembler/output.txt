@@ -1,0 +1,15 @@
+The Infix Expressionn is: ( AX + ( B * C ) ) ;
+The Postfix Expression is: + AX * B C  
+
+The Infix Expressionn is: ( ( AX + ( B * CY ) ) / ( D - E ) ) ;
+The Postfix Expression is: / + AX * B CY   - D E  
+
+The Infix Expressionn is: ( ( A + B ) * ( C + E ) ) ;
+The Postfix Expression is: * + A B  + C E  
+
+The Infix Expressionn is: ( AX * ( BX * ( ( ( CY + AY ) + BY ) * CX ) ) ) ;
+The Postfix Expression is: * AX * BX * + + CY AY  BY  CX   
+
+The Infix Expressionn is: ( ( H * ( ( ( ( A + ( ( B + C ) * D ) ) * F ) * G ) * E ) ) + J ) ;
+The Postfix Expression is: + * H * * * + A * + B C  D   F  G  E   J 
+
