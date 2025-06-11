@@ -1,0 +1,25 @@
+Sandy Zhang
+
+What function took the longest and why?
+
+out.txt: The bubble sort function takes the longest about 43.87 % of the execution time, and within that time percentage it took 1.49 seconds for 1 call. 
+The main reason it took so long is because it repeatedly iterates through the vector and perform swap only if the number is out of order.
+The time complexity of bubble sort is O(n^2); which is the worst case because as the size of the input increases, the time to execute also increases.
+This indicates the bottleneck is the number of times bubble sort needs to access the vector, which causes the large number in calls.
+
+selection_sort.txt: The selection sort function is the second in line that takes the longest with 45.80 %, and within that time percentage, it took 0.70 seconds for 1 call.
+Although the time of execution is larger than bubble sort, it sorts an array by repeatedly picking the smallest (or largest) number in an unsorted list
+and swapped it with the first unsorted element; which takes shorter time than bubble sort.
+The bubble sort function takes about 43.87% follows by a call to std::vector<int, std::allocator<int> >::operator[](unsigned long)
+that takes 26.65 %, and within that executive time, it takes 2.40 seconds. In comparision, the selection sort function is followed by a call
+to std::vector<int, std::allocator<int> >::operator[](unsigned long); which takes about 22.90%, and within the executive time, it takes 1.05 seconds.
+It has a time complexity of O(n2); which makes it unsuitable for large lists of integers because as input size increases, the performance decreases.
+
+quick_sort.txt: The quick sort function takes the shortest amount of time about 0 % of the execution time and 0 seconds within the percentage for 1 call.
+From the sort_lib.cpp, is the only function that utilize the Divide and Conquer method that selects an element as a pivot and partitions around the chosen 
+pivot point, and placed it to its correct position in the sorted array. In addition, it follows by a call to std::vector<int, std::allocator<int> >::operator[](unsigned long)
+that only takes 0 % of the execution time, and 0 seconds.
+It has a time complexity of O(n) in the best case that allows it to be flexible with larger dataset; which causes the lowest number in calls (882631) compared to bubble sort(1348228538) 
+and selection sort (900119996).
+
+
